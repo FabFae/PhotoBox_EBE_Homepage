@@ -842,6 +842,17 @@ input, select, textarea {
 		display: block;
 	}
 
+	form input[type="checkbox"] {
+		-webkit-appearance: checkbox;
+		-moz-appearance: checkbox;
+		appearance: checkbox;
+		display: inline-block;
+		width: auto;
+		height: auto;
+		margin-right: 0.5em;
+		border: 0;
+	}
+
 	input[type="text"],
 	input[type="password"],
 	input[type="email"],
@@ -2254,7 +2265,7 @@ input, select, textarea {
 /* One */
 
 	#one {
-		background: url("images/overlay.png"), url("../../images/one.jpg");
+		background: url("images/Fotobox_01_extended.jpg"), url("../../images/Fotobox_01_extended.jpg");
 		background-size: 256px 256px, cover;
 		background-attachment: fixed, fixed;
 		background-position: top left, center center;
@@ -2263,18 +2274,75 @@ input, select, textarea {
 /* Two */
 
 	#two {
-		background: url("images/overlay.png"), url("../../images/two.jpg");
+		background: url("images/teamwork-3213924_1280_edit.jpg"), url("../../images/teamwork-3213924_1280_edit.jpg");
 		background-size: 256px 256px, cover;
 		background-attachment: fixed, fixed;
 		background-position: top left, center center;
 	}
 
+	
+/* services */
+
+	#delivery {
+		background: url("images/package-1511683_1280.jpg"), url("../../images/package-1511683_1280.jpg");
+		border-top: .2em solid #39454b;
+		background-size: 256px 256px, cover;
+		background-attachment: fixed, fixed;
+		background-position: top left, center center;
+	}
+
+	#printer {
+		background: url("images/Drucker.png"), url("../../images/Drucker.png");
+		border-top: .2em solid #39454b;
+		background-size: 256px 256px, cover;
+		background-attachment: fixed, fixed;
+		background-position: top left, center center;
+	}
+
+	#personalize {
+		background: url("images/overlay_wedding_withBG.jpg"), url("../../images/overlay_wedding_withBG.jpg");
+		border-top: .2em solid #39454b;
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-attachment: fixed, fixed;
+		background-position: top left, center center;
+	}
+
+	#accessoiers {
+		background: url("images/Accessoirs.jpg"), url("../../images/Accessoirs.jpg");
+		border-top: .2em solid #39454b;
+		border-bottom: .2em solid #39454b;
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-attachment: fixed, fixed;
+		background-position: top left, center center;
+	}
+
+/* Services */
+
+
+
+
+
+@media screen and (max-width: 736px) {
+	#services .servicex {
+		flex-direction: column;
+		align-items: flex-start;
+	}
+
+	#services .servicex .image {
+		flex: 0 0 auto;
+		max-width: 100%;
+		width: 100%;
+	}
+}
+
 /* Contact */
 
-	#contact {
-		overflow: hidden;
-		padding-bottom: 0;
-	}
+#contact {
+	overflow: hidden;
+	padding-bottom: 0;
+}
 
 		#contact .box {
 			-moz-transition: -moz-transform 1s ease;
@@ -2310,3 +2378,8 @@ input, select, textarea {
 			}
 
 		}
+	#services {
+		padding-bottom: 0%;
+		background-color: #e9e6e6f3;
+		
+	}

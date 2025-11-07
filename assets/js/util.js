@@ -452,69 +452,69 @@
 						});
 
 				})
-				.on('reset', function(event) {
+				// .on('reset', function(event) {
 
-					event.preventDefault();
+				// 	event.preventDefault();
 
-					$this.find('select')
-						.val($('option:first').val());
+				// 	$this.find('select')
+				// 		.val($('option:first').val());
 
-					$this.find('input,textarea')
-						.each(function() {
+					// $this.find('input,textarea')
+					// 	.each(function() {
 
-							var i = $(this),
-								x;
+					// 		var i = $(this),
+					// 			x;
 
-							i.removeClass('polyfill-placeholder');
+					// 		i.removeClass('polyfill-placeholder');
 
-							switch (this.type) {
+					// 		switch (this.type) {
 
-								case 'submit':
-								case 'reset':
-									break;
+					// 			case 'submit':
+					// 			case 'reset':
+					// 				break;
 
-								case 'password':
-									i.val(i.attr('defaultValue'));
+					// 			case 'password':
+					// 				i.val(i.attr('defaultValue'));
 
-									x = i.parent().find('input[name=' + i.attr('name') + '-polyfill-field]');
+					// 				x = i.parent().find('input[name=' + i.attr('name') + '-polyfill-field]');
 
-									if (i.val() == '') {
-										i.hide();
-										x.show();
-									}
-									else {
-										i.show();
-										x.hide();
-									}
+					// 				if (i.val() == '') {
+					// 					i.hide();
+					// 					x.show();
+					// 				}
+					// 				else {
+					// 					i.show();
+					// 					x.hide();
+					// 				}
 
-									break;
+					// 				break;
 
-								case 'checkbox':
-								case 'radio':
-									i.attr('checked', i.attr('defaultValue'));
-									break;
+					// 			case 'checkbox':
+					// 			case 'radio':
+					// 				i.prop('checked', this.defaultChecked);
+					// 				break;
 
-								case 'text':
-								case 'textarea':
-									i.val(i.attr('defaultValue'));
+					// 			case 'text':
+					// 			case 'textarea':
+					// 				i.val(i.attr('defaultValue'));
 
-									if (i.val() == '') {
-										i.addClass('polyfill-placeholder');
-										i.val(i.attr('placeholder'));
-									}
+					// 				if (i.val() == '') {
+					// 					i.addClass('polyfill-placeholder');
+					// 					i.val(i.attr('placeholder'));
+					// 				}
 
-									break;
+					// 				break;
 
-								default:
-									i.val(i.attr('defaultValue'));
-									break;
+					// 			default:
+					// 				i.val(i.attr('defaultValue'));
+					// 				break;
 
-							}
-						});
+					// 		}
+					// 	});
 
-				});
+		// 		});
 
-		return $this;
+		// return $this;
 
 	};
 
