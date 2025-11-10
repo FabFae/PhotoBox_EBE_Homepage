@@ -2093,7 +2093,7 @@ input, select, textarea {
 		position: relative;
 		background: #ffffff;
 		border-bottom: solid 1px #ccc;
-		padding: 5em 0 4em 0;
+		padding: 0em 0 4em 0;
 		text-align: center;
 	}
 
@@ -2108,8 +2108,16 @@ input, select, textarea {
 /* Nav */
 
 	#nav {
+		position: fixed;
+		top: 0;
+		left: 0;
+		right: 0;
+		z-index: 1000;
 		text-align: center;
-		margin: 1.5em 0 .5em 0;		
+		margin: 0;
+		padding: 0.5em 0;
+		background: rgba(37, 33, 34, 0.95);
+		box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);		
 	}
 
 		#nav > ul {
@@ -2205,8 +2213,8 @@ input, select, textarea {
 		background-repeat: no-repeat;
 		text-align: center;
 		position: relative;
-		padding: 8em 0;
-		margin: 4em 0 0 0;
+		padding: 16em 0;
+		
 	}
 
 		#banner header {
@@ -2400,7 +2408,7 @@ input, select, textarea {
 		/* Section/Article */
 
 			header.major {
-				margin: 0.75em 0 2.5em 0;
+				margin: 0em 0 2.5em 0;
 			}
 
 				header.major h2 {
@@ -2416,7 +2424,7 @@ input, select, textarea {
 		/* Header */
 
 			#header {
-				padding: 4em 0 3em 0;
+				padding: 0em 0 3em 0;
 			}
 
 		/* Banner */
@@ -2514,6 +2522,7 @@ input, select, textarea {
 		/* Nav */
 
 			#nav {
+				position: fixed;
 				display: none;
 			}
 
@@ -2871,7 +2880,7 @@ input, select, textarea {
 
 			#header {
 				text-align: center;
-				padding: 2em 0;
+				
 			}
 
 				#header h1 {
@@ -2904,7 +2913,7 @@ input, select, textarea {
 			}
 
 				#banner header {
-					padding: 1.5em 1em 1.5em 1em;
+					padding: 00em 1em 1.5em 1em;
 					display: block;
 					border-radius: 0;
 				}
