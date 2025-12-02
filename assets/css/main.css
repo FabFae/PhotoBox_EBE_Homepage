@@ -1720,28 +1720,66 @@ input, select, textarea {
 		display: inline-block;
 		outline: 0;
 	}
-
+	
 		.image img {
 			display: block;
 			width: 100%;
 		}
-
+	
 		.image.centered {
 			display: block;
 			margin: 0 0 2em 0;
 		}
-
+	
 			.image.centered img {
 				margin: 0 auto;
 				width: auto;
 			}
-
+	
 		.image.featured {
 			display: block;
 			width: 100%;
 			margin: 0 0 2em 0;
 		}
 
+	/* Photobox Section */
+
+	#photobox {
+		margin-top: 3em;
+	}
+
+	#photobox .row {
+		align-items: center;
+	}
+
+	.photobox-image-col {
+		display: flex;
+		justify-content: center;
+	}
+
+	.photobox-image-col .image.featured {
+		max-width: 320px;
+		margin: 0 auto 1.5em auto;
+	}
+
+	.photobox-image-col img {
+		width: 100%;
+		height: auto;
+		border-radius: 8px;
+		box-shadow: 0 10px 25px rgba(0, 0, 0, 0.35);
+	}
+
+	@media screen and (max-width: 736px) {
+		#photobox {
+			margin-top: 2em;
+		}
+
+		.photobox-image-col .image.featured {
+			max-width: 260px;
+			margin-bottom: 2em;
+		}
+	}
+	
 		.image.left {
 			float: left;
 			margin: 0 2em 2em 0;
