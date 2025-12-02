@@ -176,8 +176,10 @@ input, select, textarea {
 	}
 
 	.checkboxes {
-		margin-bottom: 2em;
+		margin: 2em 0;
 	}
+
+
 /* Container */
 
 	.container {
